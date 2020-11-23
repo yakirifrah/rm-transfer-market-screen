@@ -1,6 +1,5 @@
 import { useState, useContext } from 'react';
-import Modal from '../../../modal';
-import ListClub from '../../../listClub';
+import { ListClub, Modal } from '../../../index';
 import { RootContext } from '../../../../contexts';
 import { observer } from 'mobx-react-lite';
 

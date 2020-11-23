@@ -72,6 +72,8 @@ const HeaderTable = observer(() => {
           }
         });
         break;
+      default:
+        return;
     }
     sortStore.updateSortingState(sorting);
     transferMarketStore.orderBy(sorting.column, sorting.order);

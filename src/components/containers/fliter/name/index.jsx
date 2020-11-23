@@ -1,8 +1,7 @@
 import { useState, useContext } from 'react';
-import Modal from '../../../modal';
+import { Modal, FormPlayer } from '../../../index';
 import { observer } from 'mobx-react-lite';
 import { RootContext } from '../../../../contexts';
-import FormPlayer from '../../../form';
 
 import './style.scss';
 

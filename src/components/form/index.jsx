@@ -2,7 +2,6 @@ import { useContext, useState } from 'react';
 import { observer } from 'mobx-react-lite';
 import { RootContext } from '../../contexts';
 import './style.scss';
-import { loggerMobx } from '../../helpers';
 
 const FormPlayer = observer((props) => {
   const { onClose } = props;

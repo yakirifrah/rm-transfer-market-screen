@@ -1,4 +1,4 @@
-import { action, makeAutoObservable, observable, computed } from 'mobx';
+import { makeAutoObservable, observable } from 'mobx';
 
 export default class SortStore {
   sorting = {

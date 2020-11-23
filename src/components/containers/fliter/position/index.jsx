@@ -3,7 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { RootContext } from '../../../../contexts';
 import './style.scss';
 
-const FilterRole = observer(() => {
+const FilterPosition = observer(() => {
   const [select, setSelect] = useState('ALL');
   const { filterStore, transferMarketStore } = useContext(RootContext);
   const selectPosition = (event, type = 'ALL') => {
@@ -23,6 +23,8 @@ const FilterRole = observer(() => {
       case 'FW':
         setSelect('FW');
         break;
+      default:
+        return;
     }
     event.preventDefault();
     filterStore.selectPosition(type);
@@ -30,7 +32,7 @@ const FilterRole = observer(() => {
   };
 
   return (
-    <div className="Filter-by-role-container">
+    <div className="Filter-by-position-container">
       <label className="label">
         <h3>select position</h3>
       </label>
@@ -38,35 +40,35 @@ const FilterRole = observer(() => {
         <button
           onClick={(event) => selectPosition(event, 'ALL')}
           className={`btn`}
-          aria-checked={select === 'ALL'}
+          aria-pressed={select === 'ALL'}
         >
           All
         </button>
         <button
           className={`btn`}
           onClick={(event) => selectPosition(event, 'GK')}
-          aria-checked={select === 'GK'}
+          aria-pressed={select === 'GK'}
         >
           GK
         </button>
         <button
           className={`btn`}
           onClick={(event) => selectPosition(event, 'DF')}
-          aria-checked={select === 'DF'}
+          aria-pressed={select === 'DF'}
         >
           DF
         </button>
         <button
           className={`btn`}
           onClick={(event) => selectPosition(event, 'MD')}
-          aria-checked={select === 'MD'}
+          aria-pressed={select === 'MD'}
         >
           MD
         </button>
         <button
           className={`btn`}
           onClick={(event) => selectPosition(event, 'FW')}
-          aria-checked={select === 'FW'}
+          aria-pressed={select === 'FW'}
         >
           FW
         </button>
@@ -74,4 +76,4 @@ const FilterRole = observer(() => {
     </div>
   );
 });
-export default FilterRole;
+export default FilterPosition;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.scss';
-import { TransferMarket } from './components';
+import TransferMarket from './pages/transferMarket';
 
 function App() {
   return (

@@ -1,16 +1,17 @@
 @import "src/styles/main";
 
-.Filter-by-role-container {
+.Filter-by-position-container {
   display: flex;
   flex-direction: column;
 
 
   .button--group {
 
-    .btn[aria-checked="true"] {
+    .btn[ aria-pressed="true"] {
       background-image: linear-gradient(#8c67aa, #1bc0ef) !important;
       color: #fff !important;
     }
+
     font-size: 16rem;
 
 

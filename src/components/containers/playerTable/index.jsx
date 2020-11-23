@@ -6,7 +6,7 @@ const PlayerTable = () => {
   return (
     <div className="PlayerTable">
       <label className="label">
-        <h3 className='sorted-title'>sorted by</h3>
+        <h3 className="sorted-title">sorted by</h3>
       </label>
       <HeaderTable />
       <ContentTable />
