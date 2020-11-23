@@ -1,0 +1,23 @@
+.App {
+  height: inherit;
+  width: inherit;
+
+  .container {
+    display: flex;
+    height: inherit;
+    width: inherit;
+    justify-content: center;
+
+
+  }
+
+  .game {
+    position: relative;
+    height: inherit;
+    width: 50vh;
+    margin: 0;
+    max-width: unset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, .5);
+  }
+}

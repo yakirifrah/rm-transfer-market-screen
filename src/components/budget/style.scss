@@ -1,0 +1,38 @@
+.Budget-wrapper {
+  margin-top: 3%;
+
+  &__icons {
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 2vw;
+      padding: .25vw 2vw;
+      background-color: rgba(2, 13, 19, .3);
+      border-top-right-radius: 2vw;
+      border-bottom-left-radius: 2vw;
+      font-weight: 600;
+
+      .image {
+        img {
+          width: 18.5px;
+          height: 18.5px;
+        }
+      }
+    }
+
+    .title {
+      margin-right: 3px;
+
+      h3 {
+        font-size: 14rem;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,60 @@
+.Filter-by-price-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  .ranges {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+
+    .range {
+      width: 55px;
+    }
+  }
+
+
+}
+
+.wrapper--slider {
+  position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  height: 34px;
+  padding: 5px;
+  border-radius: 5vw;
+  background: #dededf;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  width: 300px;
+  bottom: -50%;
+  flex: 1 1;
+  contain: size layout style;
+  cursor: grab;
+  touch-action: pan-y;
+
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &.details {
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+
+    .min-value {
+      margin-right: 3%;
+
+    }
+
+    .max-value {
+      margin-left: 3%;
+    }
+
+  }
+}

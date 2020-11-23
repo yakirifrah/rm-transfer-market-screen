@@ -1,0 +1,60 @@
+.ListClub {
+  padding: 13px;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  border-radius: 2vw;
+  overflow: hidden;
+  font-weight: 200;
+  color: #6b6767;
+  background: #dededf;
+  position: relative;
+  top: 13%;
+
+  &__header-wrapper {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    height: 15%;
+    color: #000;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .3);
+    font-size: 24rem;
+  }
+
+  .header {
+    padding: 10px;
+  }
+}
+
+
+.ClubItem {
+  .item {
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    display: flex;
+    padding: 5px;
+
+    &:focus, &:active {
+      box-shadow: inset 0 0 1vw rgba(0, 0, 0, .5)
+    }
+
+    &:first-child {
+      padding-top: 7px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    span {
+      margin-left: 6px;
+      font-size: 16rem;
+      font-weight: bolder;
+    }
+
+    img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "src/styles/abstracts/variables";
+
+.select {
+  display: flex;
+  height: 29px;
+  padding: 5px;
+  border-radius: 5vw;
+  background: #dededf;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.select-with-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.label {
+  font-size: 16rem;
+  color: $white;
+  margin-bottom: 3%;
+}

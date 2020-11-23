@@ -1,0 +1,31 @@
+@import "../../styles/main";
+
+.Header--container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+
+    &__icon {
+      margin-left: 13rem;
+
+      .sponsor-img {
+        width: 34px;
+        height: 38px;
+      }
+    }
+
+    &__title {
+      text-shadow: -1px -1px 4px rgba(0, 0, 0, .5), 1px -1px 4px rgba(0, 0, 0, .5), -1px 1px 4px rgba(0, 0, 0, .5), 1px 1px 4px rgba(0, 0, 0, .5);
+      font-weight: 400;
+      color: $white;
+      font-size: 23rem;
+    }
+
+  }
+
+}

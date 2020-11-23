@@ -1,0 +1,57 @@
+@import "src/styles/main";
+
+.form--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .input-name {
+    border: 0;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-block-end: 2vw;
+    padding: 13px;
+    width: 87%;
+
+  }
+
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+
+    .btn-search {
+
+      background-image: linear-gradient(45deg, rgb(130, 111, 176) 20%, rgb(43, 180, 229));
+
+
+    }
+
+    .btn-reset {
+      background-image: linear-gradient(45deg, rgb(236, 75, 69) 20%, rgb(242, 131, 15));
+    }
+
+    .btn {
+      color: $white;
+      font-size: 16rem;
+      outline: none;
+      width: fit-content;
+      height: 24px;
+      padding: 8px 8px 24px;
+      border-radius: 10vw;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+
+  }
+}

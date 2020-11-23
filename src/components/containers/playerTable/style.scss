@@ -1,0 +1,61 @@
+.PlayerTable {
+  margin-top: 3%;
+
+  .sorted-title {
+    margin-left: 22px;
+  }
+}
+
+.t-header {
+  color: black;
+
+}
+
+.t-header-wrapper {
+
+  &__button-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #dededf;
+    margin-top: 13px;
+    font-size: 13rem;
+    padding-left: 44px;
+  }
+}
+
+.t-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 93px;
+  margin: 3px;
+  padding: 5px 0;
+
+  &:active {
+    background-color: #f1f1f1;
+  }
+
+  img {
+    display: none;
+    margin-right: 4px;
+    height: 8px;
+    width: 8px;
+  }
+
+
+  &.ascending, &.descending {
+    background-color: #f1f1f1;
+
+    img {
+      display: block;
+    }
+  }
+
+  &.descending {
+    img {
+      transform: rotate(180deg);
+
+    }
+  }
+}
