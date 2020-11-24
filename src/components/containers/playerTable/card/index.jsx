@@ -61,7 +61,7 @@ const CardPlayer = observer(({ playerDetail }) => {
           {inLineup ? (
             <div className="price">
               <button className="btn" onClick={handleOnClick} disabled={true}>
-                {`in a team`}
+                {`lineup`}
               </button>
             </div>
           ) : (
