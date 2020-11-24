@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { RootContext } from '../../../../contexts';
 import { observer } from 'mobx-react-lite';
 
@@ -9,6 +9,11 @@ const HeaderTable = observer(() => {
     column: 'popularity',
     order: 'descending',
   });
+
+  useEffect(() => {
+    sortStore.updateSortingState(sorting);
+    transferMarketStore.orderBy(sorting);
+  }, [sorting]);
 
   const handleClick = (event, type = 'popularity') => {
     switch (type) {
@@ -27,31 +32,31 @@ const HeaderTable = observer(() => {
           }
         });
         break;
-      case 'player':
+      case 'firstName':
         setSorting((prevState) => {
           if (prevState.order === 'descending') {
             return {
-              column: 'player',
+              column: 'firstName',
               order: 'ascending',
             };
           } else if (prevState.order === 'ascending') {
             return {
-              column: 'player',
+              column: 'firstName',
               order: 'descending',
             };
           }
         });
         break;
-      case 'point':
+      case 'points':
         setSorting((prevState) => {
           if (prevState.order === 'descending') {
             return {
-              column: 'point',
+              column: 'points',
               order: 'ascending',
             };
           } else if (prevState.order === 'ascending') {
             return {
-              column: 'point',
+              column: 'points',
               order: 'descending',
             };
           }
@@ -75,8 +80,6 @@ const HeaderTable = observer(() => {
       default:
         return;
     }
-    sortStore.updateSortingState(sorting);
-    transferMarketStore.orderBy(sorting.column, sorting.order);
   };
   return (
     <div className="t-header">
@@ -90,15 +93,15 @@ const HeaderTable = observer(() => {
             <img src={'/assets/images/arrow_down.png'} alt={'arrow'} />
           </div>
           <div
-            className={sorting.column === 'player' ? `t-btn ${sorting.order}` : `t-btn`}
-            onClick={(event) => handleClick(event, 'player')}
+            className={sorting.column === 'firstName' ? `t-btn ${sorting.order}` : `t-btn`}
+            onClick={(event) => handleClick(event, 'firstName')}
           >
             <span>player name</span>
             <img src={'/assets/images/arrow_down.png'} alt={'arrow'} />
           </div>
           <div
-            className={sorting.column === 'point' ? `t-btn ${sorting.order}` : `t-btn`}
-            onClick={(event) => handleClick(event, 'point')}
+            className={sorting.column === 'points' ? `t-btn ${sorting.order}` : `t-btn`}
+            onClick={(event) => handleClick(event, 'points')}
           >
             <span>points</span>
             <img src={'/assets/images/arrow_down.png'} alt={'arrow'} />

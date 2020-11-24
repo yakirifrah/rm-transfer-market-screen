@@ -8,4 +8,3 @@ using React.js & Mobx & SCSS & material UI
 
      1. clone the repo
      2.  yarn install && yarn start  || npm i && npm start
-

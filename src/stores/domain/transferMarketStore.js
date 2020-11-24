@@ -248,13 +248,13 @@ export default class TransferMarketStore {
     }
   };
 
-  orderBy = (value = 'popularity', orderBy = 'descending') => {
+  orderBy = ({ column = 'popularity', order = 'descending' }) => {
     if (this.filterResult || this.filterResult?.length) {
       const arr = [...this.filterResult];
-      this.filterResult = arr.sort(dynamicSort('popularity', orderBy));
+      this.filterResult = arr.sort(dynamicSort('popularity', order));
     } else {
       const copyData = [...this.players];
-      this.players = copyData.sort(dynamicSort('popularity', orderBy));
+      this.players = copyData.sort(dynamicSort(column, order));
     }
   };
 

@@ -11,7 +11,7 @@ const CardPlayer = observer(({ playerDetail }) => {
     firstName,
     lastName,
     popularity,
-    score,
+    points,
     price,
     position,
     imgClub,
@@ -28,7 +28,6 @@ const CardPlayer = observer(({ playerDetail }) => {
   const handleOnClick = () => {
     transferMarketStore.buyPlayer(id);
     if (transferMarketStore.message.length) {
-      console.log('modal');
       setIsModalOpen(true);
     }
   };
@@ -56,8 +55,8 @@ const CardPlayer = observer(({ playerDetail }) => {
               {firstName} {lastName}
             </div>
           </div>
-          <div className="score">
-            <b>{score}</b>
+          <div className="points">
+            <b>{points}</b>
           </div>
           {inLineup ? (
             <div className="price">

@@ -8,7 +8,7 @@ export const data = [
     price: 5000000,
     club: 'manchester united',
     popularity: 34,
-    score: 500,
+    points: 500,
     imgClub: '/assets/club/Manchester-United.png',
   },
   {
@@ -20,7 +20,7 @@ export const data = [
     price: 15000000,
     club: 'manchester united',
     popularity: 77,
-    score: 600,
+    points: 600,
     imgClub: '/assets/club/Manchester-United.png',
   },
   {
@@ -32,7 +32,7 @@ export const data = [
     price: 10400000,
     club: 'dynamo Kyiv',
     popularity: 3,
-    score: 178,
+    points: 178,
     imgClub: '/assets/club/FC_Dynamo_Kyiv_logo.svg',
   },
   {
@@ -44,7 +44,7 @@ export const data = [
     price: 8500000,
     club: 'ingolets',
     popularity: 3,
-    score: 172,
+    points: 172,
     imgClub: '/assets/club/ingolets.png',
   },
   {
@@ -56,7 +56,7 @@ export const data = [
     price: 10000000,
     club: 'desna chernihiv ',
     popularity: 0,
-    score: 14,
+    points: 14,
     imgClub: '/assets/club/330px-FC_Desna.png',
   },
   {
@@ -68,7 +68,7 @@ export const data = [
     price: 8600000,
     club: 'olimpik Donetsk ',
     popularity: 40,
-    score: 372,
+    points: 372,
     imgClub: '/assets/club/300px-FC_Olimpiс_Donetsk.png',
   },
   {
@@ -80,7 +80,7 @@ export const data = [
     price: 8000000,
     club: 'olimpik Donetsk ',
     popularity: 0,
-    score: 98,
+    points: 98,
     imgClub: '/assets/club/300px-FC_Olimpiс_Donetsk.png',
   },
   {
@@ -92,7 +92,7 @@ export const data = [
     price: 2000000,
     club: 'olimpik Donetsk ',
     popularity: 1,
-    score: 202,
+    points: 202,
     imgClub: '/assets/club/300px-FC_Olimpiс_Donetsk.png',
   },
   {
@@ -104,7 +104,7 @@ export const data = [
     price: 5000000,
     club: 'olimpik Donetsk ',
     popularity: 0,
-    score: 0,
+    points: 0,
     imgClub: '/assets/club/300px-FC_Olimpiс_Donetsk.png',
   },
   {
@@ -116,7 +116,7 @@ export const data = [
     price: 4000000,
     club: 'olimpik Donetsk ',
     popularity: 0,
-    score: 0,
+    points: 0,
     imgClub: '/assets/club/300px-FC_Olimpiс_Donetsk.png',
   },
   {
@@ -128,7 +128,7 @@ export const data = [
     price: 2000000,
     club: 'olimpik Donetsk ',
     popularity: 80,
-    score: 990,
+    points: 990,
     imgClub: '/assets/club/300px-FC_Olimpiс_Donetsk.png',
   },
 ];
