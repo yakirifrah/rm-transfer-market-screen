@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import { Modal, FormPlayer } from '../../../index';
+import { Modal, FormSelectPlayer } from '../../../index';
 import { observer } from 'mobx-react-lite';
 import { RootContext } from '../../../../contexts';
 
@@ -39,7 +39,7 @@ const FilterName = observer(() => {
       {isModalSelectFilterNameOpen && (
         <Modal visible={isModalSelectFilterNameOpen} onClose={handleCloseModal}>
           <div className="wrapper-content-modal">
-            <FormPlayer onClose={handleCloseModal} />
+            <FormSelectPlayer onClose={handleCloseModal} />
           </div>
         </Modal>
       )}

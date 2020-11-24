@@ -1,4 +1,5 @@
 import { action, makeAutoObservable, observable } from 'mobx';
+import * as types from '../../constants';
 
 export default class FilterStore {
   filter = {
@@ -7,7 +8,7 @@ export default class FilterStore {
     },
     filterByPrice: {
       min: 0,
-      max: 20000000,
+      max: types.TEAM_BUDGET,
     },
     filterByClub: {
       club: 'all club',

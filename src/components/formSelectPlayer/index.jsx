@@ -3,7 +3,7 @@ import { observer } from 'mobx-react-lite';
 import { RootContext } from '../../contexts';
 import './style.scss';
 
-const FormPlayer = observer((props) => {
+const FormSelectPlayer = observer((props) => {
   const { onClose } = props;
   const { filterStore } = useContext(RootContext);
   const [name, setName] = useState('');
@@ -40,4 +40,4 @@ const FormPlayer = observer((props) => {
     </form>
   );
 });
-export default FormPlayer;
+export default FormSelectPlayer;
