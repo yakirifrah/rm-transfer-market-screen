@@ -50,7 +50,7 @@ const CardPlayer = observer(({ playerDetail }) => {
             <span className="position">{position}</span>
           </div>
           <div className="popularity">{popularity}%</div>
-          <div className="full-name">
+          <div className="name">
             <div>
               {firstName} {lastName}
             </div>
