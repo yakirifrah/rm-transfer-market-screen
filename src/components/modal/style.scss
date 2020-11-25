@@ -1,3 +1,4 @@
+@import "src/styles/main";
 
 .Modal-wrapper {
   display: flex;
@@ -26,15 +27,31 @@
 }
 
 .mask {
-  width: 50vh;
+  width: 30vw;
   height: 100%;
   position: absolute;
   background: rgba(0, 0, 0, 0.898);
+  @media #{$break1},#{$break2},#{$break3} {
+    width: 100vw;
+
+  }
+
 }
 
 .content {
-  width: 50vh;
+  width: 30vw;
   height: 100%;
   position: absolute;
+  display: flex;
+  @media #{$break1},#{$break2},#{$break3} {
+    width: 100vw;
 
+  }
+
+  .body-content {
+    width: 80%;
+    height: fit-content;
+    align-self: center;
+    margin: 0 auto;
+  }
 }

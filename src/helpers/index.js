@@ -1,7 +1,6 @@
 import { parse, stringify } from 'flatted/esm';
 
-const loggerMobx = (...args) =>
-  console.log(...args.map((arg) => (!arg ? arg : parse(stringify(arg)))));
+const loggerMobx = (...args) => console.log(...args.map((arg) => (!arg ? arg : parse(stringify(arg)))));
 
 const dynamicSort = (property, orderBy) => {
   let sortOrder = 1;

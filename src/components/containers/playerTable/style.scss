@@ -16,11 +16,12 @@
   &__button-group {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 103%;
     background-color: #dededf;
     margin-top: 13px;
     font-size: 13rem;
-    padding-left: 44px;
+    justify-content: flex-end;
+    margin-left: -13px;
   }
 }
 
@@ -29,8 +30,13 @@
   align-items: center;
   justify-content: space-around;
   width: 93px;
-  margin: 3px;
+  margin-top: 1%;
+  margin-bottom: 1%;
   padding: 5px 0;
+
+  &:last-child {
+    margin-right: 1%;
+  }
 
   &:active {
     background-color: #f1f1f1;

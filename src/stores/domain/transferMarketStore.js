@@ -162,14 +162,11 @@ export default class TransferMarketStore {
         const { position } = this.filterInstance.filter.filterByPosition;
         if (!query.length && position === 'ALL') {
           return data.filter(
-            (player) =>
-              parseInt(player.price) >= parseInt(min) && parseInt(player.price) <= parseInt(max),
+            (player) => parseInt(player.price) >= parseInt(min) && parseInt(player.price) <= parseInt(max),
           );
         } else if (!query.length && position !== 'ALL') {
           return data
-            .filter(
-              (player) => parseInt(player.price) >= parseInt(min) && player.price <= parseInt(max),
-            )
+            .filter((player) => parseInt(player.price) >= parseInt(min) && player.price <= parseInt(max))
             .filter((player) => player.position === position);
         } else if (query.length && position === 'ALL') {
           return data
@@ -196,9 +193,7 @@ export default class TransferMarketStore {
         const { position } = this.filterInstance.filter.filterByPosition;
 
         if (club === 'all club' && position === 'ALL') {
-          return data.filter(
-            (player) => player.price >= parseInt(min) && player.price <= parseInt(max),
-          );
+          return data.filter((player) => player.price >= parseInt(min) && player.price <= parseInt(max));
         } else if (club === 'all club' && position !== 'ALL') {
           return data
             .filter((player) => player.price >= parseInt(min) && player.price <= parseInt(max))
@@ -218,9 +213,7 @@ export default class TransferMarketStore {
         const { min, max } = this.filterInstance.filter.filterByPrice;
         const { query } = this.filterInstance.filter.filterByName;
         if (club === 'all club' && !query.length) {
-          return data.filter(
-            (player) => player.price >= parseInt(min) && player.price <= parseInt(max),
-          );
+          return data.filter((player) => player.price >= parseInt(min) && player.price <= parseInt(max));
         } else if (club === 'all club' && !query.length) {
           return data
             .filter((player) => player.price >= parseInt(min) && player.price <= parseInt(max))
@@ -326,8 +319,7 @@ export default class TransferMarketStore {
       case 'price': {
         const { min, max } = values;
         this.filterResult = this.players.filter(
-          (player) =>
-            parseInt(player.price) >= parseInt(min) && parseInt(player.price) <= parseInt(max),
+          (player) => parseInt(player.price) >= parseInt(min) && parseInt(player.price) <= parseInt(max),
         );
         arr = [...this.filterResult];
         return arr;

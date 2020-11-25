@@ -32,11 +32,7 @@ const FilterPrice = observer(() => {
     transferMarketStore.filterByPrice();
   };
   const renderSlider = () => (
-    <div
-      className="wrapper--slider select"
-      onMouseLeave={() => setHover(false)}
-      onMouseEnter={() => setHover(true)}
-    >
+    <div className="wrapper--slider select" onMouseLeave={() => setHover(false)} onMouseEnter={() => setHover(true)}>
       <div className="slider details">
         <div className="value min-value">
           <span>0</span>
@@ -64,11 +60,7 @@ const FilterPrice = observer(() => {
       <label className="label">
         <h3>select a price range</h3>
       </label>
-      <div
-        className="ranges"
-        onMouseEnter={() => setHover(true)}
-        onMouseLeave={() => setHover(false)}
-      >
+      <div className="ranges" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <div className="range select">
           <span>{value[0]}m</span>
         </div>

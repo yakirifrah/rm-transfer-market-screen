@@ -1,3 +1,5 @@
+@import "src/styles/main";
+
 .App {
   height: inherit;
   width: inherit;
@@ -14,10 +16,15 @@
   .game {
     position: relative;
     height: inherit;
-    width: 50vh;
+    width: 30vw;
     margin: 0;
     max-width: unset;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, .5);
+
+    @media #{$break1},#{$break2},#{$break3} {
+      width: 100vw;
+
+    }
   }
 }

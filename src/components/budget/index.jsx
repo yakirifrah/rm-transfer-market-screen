@@ -2,10 +2,7 @@ import './style.scss';
 
 export default function Budget(props) {
   let { transfer, coins, points } = props;
-  transfer =
-    transfer % 1000000 === 0
-      ? transfer / 1000000 + 'M'
-      : parseFloat(transfer / 1000000).toFixed(1) + 'M';
+  transfer = transfer % 1000000 === 0 ? transfer / 1000000 + 'M' : parseFloat(transfer / 1000000).toFixed(1) + 'M';
   coins = coins % 1000 === 0 ? coins / 1000 + 'K' : parseFloat(coins / 1000).toFixed(2) + 'K';
   return (
     <div className="Budget-wrapper">

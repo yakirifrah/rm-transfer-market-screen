@@ -12,7 +12,7 @@ export default function Modal(props) {
         <div className="close-btn" onClick={onClose}>
           <img src={'/assets/images/close.png'} alt="close" />
         </div>
-        {props.children}
+        <div className="body-content">{props.children}</div>
       </div>
     </div>,
     modalRoot,

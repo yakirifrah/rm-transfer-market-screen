@@ -86,21 +86,21 @@ const HeaderTable = observer(() => {
       <div className="t-header-wrapper">
         <div className="t-header-wrapper__button-group">
           <div
-            className={sorting.column === 'popularity' ? `t-btn ${sorting.order}` : `t-btn`}
+            className={sorting.column === 'popularity' ? `t-btn ${sorting.order} mr-1` : `t-btn mr-1`}
             onClick={(event) => handleClick(event, 'popularity')}
           >
             <span>popularity</span>
             <img src={'/assets/images/arrow_down.png'} alt={'arrow'} />
           </div>
           <div
-            className={sorting.column === 'firstName' ? `t-btn ${sorting.order}` : `t-btn`}
+            className={sorting.column === 'firstName' ? `t-btn ${sorting.order} ml-3` : `t-btn ml-3`}
             onClick={(event) => handleClick(event, 'firstName')}
           >
             <span>player name</span>
             <img src={'/assets/images/arrow_down.png'} alt={'arrow'} />
           </div>
           <div
-            className={sorting.column === 'points' ? `t-btn ${sorting.order}` : `t-btn`}
+            className={sorting.column === 'points' ? `t-btn ${sorting.order} ml-3` : `t-btn ml-3`}
             onClick={(event) => handleClick(event, 'points')}
           >
             <span>points</span>

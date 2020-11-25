@@ -20,15 +20,10 @@ const FilterName = observer(() => {
         <label className="label">
           <h3>select player</h3>
         </label>
-        <div
-          className="btn-select-club select"
-          onClick={() => setIsModalSelectFilterNameOpen(true)}
-        >
+        <div className="btn-select-club select" onClick={() => setIsModalSelectFilterNameOpen(true)}>
           <div className="select-with-arrow">
             <h3 className="full-name">
-              {filterStore.filter.filterByName.query === ''
-                ? 'all player'
-                : filterStore.filter.filterByName.query}
+              {filterStore.filter.filterByName.query === '' ? 'all player' : filterStore.filter.filterByName.query}
             </h3>
             <div className="img-wrapper">
               <img className="arrow-img" src={'/assets/images/arrow-comment.png'} alt="arrow" />
